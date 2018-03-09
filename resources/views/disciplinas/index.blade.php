@@ -4,7 +4,7 @@
 <a href='/disciplinas/create'>Cadastrar disciplina</a>
 
 @foreach ($disciplinas as $disciplina)
-    <li>{{ $disciplina->titulo }}</li>
+    <li><a href='/disciplinas/{{ $disciplina->id }}'>{{ $disciplina->titulo }}</a></li>
 @endforeach
 
 </body>
