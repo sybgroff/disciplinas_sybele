@@ -1,8 +1,13 @@
 <?php
 
 Route::get('/','DisciplinaController@index');
-Route::get('/disciplinas/create','DisciplinaController@create');
 
-Route::post('/disciplinas','DisciplinaController@store');
+# rotas para criacao de disciplina
+#Route::get('/disciplinas/create','DisciplinaController@create');
+#Route::post('/disciplinas','DisciplinaController@store');
 
-Route::get('/disciplinas/{disciplina}','DisciplinaController@show');
+# rotas para edicao.
+#Route::get('/disciplinas/{disciplina}/edit','DisciplinaController@edit');
+#Route::patch('/disciplinas/{disciplina}','DisciplinaController@update');
+
+Route::resource('disciplinas','DisciplinaController');
